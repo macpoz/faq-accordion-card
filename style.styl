@@ -117,7 +117,7 @@ body
         text-align left
 
 .accordion
-  padding: 0 2rem 2rem;
+  padding: 0 1.5rem 2rem;
   @media (min-width 993px)
     padding 0
     min-width 350px
@@ -129,11 +129,6 @@ body
     border-bottom 1px solid $light-grayish-blue
     padding-bottom 1rem
     padding-top 1rem
-    &:nth-of-type(1), &:nth-of-type(2)
-      height 2rem
-
-      @media (min-width 993px)
-        height 1rem
 
     &[open]
       height 4rem
@@ -142,9 +137,7 @@ body
         height 3.8rem
 
       &:nth-of-type(1)
-        height 6.3rem
-      &:nth-of-type(2)
-        height 5.3rem
+        height 5rem
       &:nth-of-type(3)
         height 5rem
       &:nth-of-type(5)
@@ -161,8 +154,7 @@ body
         h2
           font-weight 700
           color $very-dark-desaturated-blue
-
-        img
+        &:after
           transform rotate(180deg)
 
   summary
@@ -173,7 +165,7 @@ body
 
     h2
       color $very-dark-grayish-blue
-      font-size 15px
+      font-size 14px
       font-weight 400
       transition color 200ms
 
@@ -181,10 +173,9 @@ body
       h2
         color $soft-red
 
-    img
-      display block
-      width 10px
-      height 9px
+    &:after
+      content url(./images/icon-arrow-down.svg)
+      float right
 
   p
     color $dark-grayish-blue
