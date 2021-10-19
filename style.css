@@ -12,11 +12,6 @@ body {
   align-items: center;
   background-image: linear-gradient(to bottom, #af67e9, #6565e7);
 }
-@media (min-width: 993px) {
-  body {
-    margin-left: 3rem;
-  }
-}
 .card {
   box-shadow: 0 40px 40px 0 rgba(29,30,53,0.4);
   border: none;
@@ -28,12 +23,20 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  transition: width 300ms ease;
+  width: auto;
+}
+@media (min-width: 555px) {
+  .card {
+    width: 505px;
+    margin-right: 3rem;
+  }
 }
 @media (min-width: 993px) {
   .card {
     max-width: 920px;
     flex-direction: row;
-    min-width: 450px;
+    width: 920px;
     align-items: stretch;
   }
 }
