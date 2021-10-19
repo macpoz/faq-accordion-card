@@ -29,7 +29,6 @@ body {
 @media (min-width: 555px) {
   .card {
     width: 505px;
-    margin-right: 3rem;
   }
 }
 @media (min-width: 993px) {
@@ -38,6 +37,7 @@ body {
     flex-direction: row;
     width: 920px;
     align-items: stretch;
+    margin-right: 3rem;
   }
 }
 .card > .left-side {
