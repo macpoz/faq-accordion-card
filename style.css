@@ -17,14 +17,13 @@ body {
   border: none;
   border-radius: 1rem;
   margin: 1.5rem;
-  min-width: 328px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
   transition: width 300ms ease;
-  width: auto;
+  width: 327px;
 }
 @media (min-width: 555px) {
   .card {
